@@ -4,13 +4,19 @@
 Value objects are an important concept in DDD. This kata is made both to learn value objects and to learn better ways of testing.
 
 Write a probability value object. It should contain the following methods:
+
    Probability CombinedWith(Probability)
+   
    Probability InverseOf()
+   
    Probability Either(Probability)
 
 if you forget your probability math:
+
    Either:P(A) + P(B) - P(A)P(B)
+   
    CombinedWith: P(A)P(B)
+   
    InverseOf: 1 - P(A)
 
 The math is surprisingly not the main part of the exercise.
