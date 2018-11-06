@@ -89,21 +89,6 @@ namespace ProbabilityKata
             return obj._value;
         }
 
-        public static Probability operator +(Probability x, Probability y)
-        {
-            return new Probability(x._value + y._value);
-        }
-
-        public static Probability operator -(Probability x, Probability y)
-        {
-            return new Probability(x._value - y._value);
-        }
-
-        public static Probability operator *(Probability x, Probability y)
-        {
-            return new Probability(x._value * y._value);
-        }
-
         protected bool Equals(Probability other)
         {
             return _value == other._value;
